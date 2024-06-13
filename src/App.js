@@ -16,7 +16,7 @@ const App = () => {
       1. It should start with the word mindmap, and the first node has to be the "root" node followed by two barkets like: 
       root((main idea)) 
       
-      2. Ideas are right indented under root, and each sub-ideas are right indented under ideas. Try to generate sub-ideas where possible.
+      2. Ideas are grouped under root. ALWAYS right indent. Sub-ideas are right indented under ideas. Try to generate sub-ideas where possible.
 
       3. Wrap each idea with a **, then add | and a short explanation of that idea, like:
       **idea** | this is the explanation of this idea
