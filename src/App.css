@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logo{
+  width:200px;
+}
+
+.content{
+  background-color: #F2F4FF;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.chatWrapper{
+  padding: 40px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.chatItem-left{
+  text-align: left;
+}
+
+.chatItem-right{
+  text-align: right;
+}
+
+.text{
+  display: inline-block;
+  text-align: left;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  max-width: 60%;
+  min-width: 20%;
+  margin-bottom: 0px;
+  background-color: #130B49;
   color: white;
+  box-shadow: 6px -6px #AAF9E9;
 }
 
-.App-link {
-  color: #61dafb;
+.right{
+  background-color: white;
+  color: black;
+  box-shadow: 6px -6px #CDDFFF;
+  border: 2px solid #130B49;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input{
+  margin-top: 40px;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label{
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #130B49;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 18px;
+  resize: none;
+}
+
+.btn-submit{
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+}
+
+.btn-submit:hover{
+  background-color: #AAF9E9;
+  border: 2px solid black;
+  color: black;
+}
+
+/**************
+Responsive
+**************/
+@media screen and (max-width: 480px) {
+  /*　Smartphone portrait */
+  .logo{
+    width: 150px;
   }
-  to {
-    transform: rotate(360deg);
+  .chatWrapper{
+    padding: 20px;
   }
+  .input{
+    padding: 20px;
+  }
+  textarea{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 896px) {
+  /*　for iPad portrait and Smartphone landscape 　*/
 }
